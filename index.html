@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/b8cf5e62cc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfólio - Luiz Otávio Calado</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>ocalado</h1>
+      </div>
+      <div class="menu">
+        <nav class="nav-list">
+          <a href="#home">Home</a>
+          <a href="#projects">Projetos</a>
+          <a href="#contact">Contato</a>
+        </nav>
+    </header>
+    <main>
+      <section id="home-content">
+        <div class="conteudo-escrito">
+          <h2 class="title-home">Olá, eu sou o Luiz Otávio.</h2>
+          <p>
+            Sou um publicitário que descobriu uma paixão por programação e
+            decidiu encarar essa aventura que é codar. Desde então, venho
+            atuando como <b><a class="dev-anchor" href="https://github.com/ocalado" target="_blank">Desenvolvedor Frontend</a></b> em diferentes projetos.
+            Aqui, você conhecerá alguns deles, bem como minhas habilidades
+            desenvolvidas até então.
+          </p>
+          <button class="btn-home"><a href="https://beacons.ai/ocalado" target="_blank">Contate-me</a></button>
+        </div>
+        <img class="img-home" src="img/dev.png" alt="homem programando" />
+      </section>
+      <section id="projects">
+        <h2 class="title-projects">Projetos desenvolvidos</h2>
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="img-project">
+                <div class="project-info">
+                  <h2>Prime Flix com React</h2>
+                  <p>Criação de site de filmes consumindo API com React</p>
+                </div>
+                <a
+                  href="https://prime-flix-project.netlify.app/"
+                  target="_blank"
+                  ><img src="img/prime-flix.PNG" alt="prime-flix-project"
+                /></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-project">
+                <div class="project-info">
+                  <h2>Spotify website com bootstrap</h2>
+                  <p>Criação de website utilizando Bootstrap</p>
+                </div>
+                <a href="https://spotify-site-pi.vercel.app/" target="_blank"
+                  ><img src="img/spotify-bootstrap.PNG" alt="spotify-bootstrap"
+                /></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-project">
+                <div class="project-info">
+                  <h2>Sorteador de nomes</h2>
+                  <p>
+                    Criação de sorteador de nomes com JS para a empresa Danza
+                  </p>
+                </div>
+                <a href="https://random-name-danza.vercel.app/" target="_blank"
+                  ><img src="img/danza-generator.PNG" alt="danza-generator"
+                /></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-project">
+                <div class="project-info">
+                  <h2>To do List</h2>
+                  <p>Criação de lista de tarefas com Javascript</p>
+                </div>
+                <a
+                  href="https://to-do-list-theta-rust.vercel.app/"
+                  target="_blank"
+                  ><img src="img/to-do-list.PNG" alt="to-do-list"
+                /></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-project">
+                <div class="project-info">
+                  <h2>Finans app</h2>
+                  <p>Criação de app financeiro com bootstrap</p>
+                </div>
+                <a
+                  href="https://finans-app-bootstrap.vercel.app/"
+                  target="_blank"
+                  ><img
+                    src="img/finans-bootstrap.PNG"
+                    alt="finans-app-bootstrap"
+                /></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-project">
+                <div class="project-info">
+                  <h2>Buscador de CEP com React</h2>
+                  <p>Criação de app para buscar CEPs utilizando React</p>
+                </div>
+                <a
+                  href="https://buscador-de-cep-reactjs.netlify.app/"
+                  target="_blank"
+                  ><img src="img/cep-react.PNG" alt="cep-react"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section id="technologies">
+        <h2 class="title-habilities">Conhecimentos</h2>
+        <div class="habilities">
+          <div class="hability-item">
+            <i class="icon fa-brands fa-html5"></i>
+          </div>
+          <div class="hability-item">
+            <i class="icon fa-brands fa-css3-alt"></i>
+          </div>
+          <div class="hability-item">
+            <i class="icon fa-brands fa-square-js"></i>
+          </div>
+          <div class="hability-item">
+            <i class="icon fa-brands fa-react"></i>
+          </div>
+          <div class="hability-item">
+            <i class="icon fa-brands fa-bootstrap"></i>
+          </div>
+          <div class="hability-item">
+            <i class="icon fa-brands fa-sass"></i>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact-area">
+          <h2 class="title-contact">Entre em contato</h2>
+          <form>
+            <input type="text" placeholder="Digite seu nome" />
+            <input type="email" placeholder="Digite seu email" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Digite sua mensagem"
+            ></textarea>
+            <button>Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="logo-footer">
+          <h1>ocalado</h1>
+        </div>
+        <div class="social">
+          <div class="social-list">
+            <a href="https://www.instagram.com/ocalado/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/otaviocalado/" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/ocalado" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+
+/* media query */
+
+@media (max-width: 768px)
+{  
+  .img-home, .project-info
+   {
+    display: none;
+   }
+   .hability-item {
+    font-size: 15px;
+   }
+
+   .habilities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+
+}
+/*estilização global da página */
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    text-decoration: none;
+}
+
+/*suavizando a navegação */ 
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: lightgrey;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 20px;
+    height: 80px;
+    z-index: 999;
+    background: #fcfcfc;
+    box-shadow: 0 1px 0 #ececec;
+    width: 100%;
+}
+
+.logo {
+    color: #4D57F7;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list a {
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transform: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+}
+
+#home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 20px;
+}
+
+.title-home {
+    font-size: 40px;
+}
+
+.dev-anchor {
+    color: inherit;
+}
+
+.dev-anchor:hover {
+    text-decoration: underline;
+}
+
+.btn-home {
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #4D57F7;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-home a {
+    color: inherit;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.title-projects, .title-habilities {
+    font-size: 35px;
+    padding-bottom: 40px;
+}
+
+.project-info {
+    padding-bottom: 20px;
+}
+
+.swiper-container {
+    width: 80%;
+    height: 80%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    color: #4D57F7;
+  }
+
+  .swiper-button-next:hover, .swiper-button-prev:hover {
+    color:#fff;
+  }
+
+#technologies {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.habilities {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.hability-item {
+    font-size: 80px;
+    color: #4D57F7;
+    padding: 20px;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.contact-area {
+    border: 1px solid #4D57F7;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+    padding: 20px 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding-top: 10px;
+
+}
+
+#contact form button {
+    background: #4D57F7;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+input, textarea, button {
+    box-shadow: 0 1px 2px #ddd;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px;
+    background: #4D57F7;
+    color: #fff;
+}
+
+.social-list a {
+    font-size: 30px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
